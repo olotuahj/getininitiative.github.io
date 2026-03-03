@@ -1,0 +1,926 @@
+/* ================= RESET ================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================= LAYOUT ================= */
+.main-page {
+    width: 100%;
+    max-width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    overflow: scroll;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    background-color: #f5f4ea;
+}
+
+.top-bar {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #0a89f1;
+    padding: 1.5rem 5rem 1.5rem 1rem;
+    color: #fff;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* ================= DESKTOP ACTIONS ================= */
+.desktop-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* ================= CAB BUTTON ================= */
+#CAB {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        #0a89f1 0%,
+        #0a89f1 10%,
+        #2e65dd 45%,
+        #2e65dd 100%
+    );
+    border-radius: 5px;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+
+#CAB:hover,
+#CAB:focus {
+    outline: 2px solid #ffd400;
+}
+
+/* ================= ROCKET BUTTON ================= */
+.rocket-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2e65dd;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rocket-box:hover {
+    transform: scale(1.1);
+}
+
+/* white background when clicked */
+.rocket-box.active-border {
+    background-color: #ffffff;
+}
+
+/* rocket stays red when active */
+.rocket-box.active-border img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(7000%) hue-rotate(0deg);
+}
+
+#rocket {
+    width: 30px;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================= MOBILE SLIDE MENU ================= */
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30%;
+    min-width: 260px;
+    height: 100%;
+
+    background-color: #2e65dd;
+    padding: 2rem 1.5rem;
+
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+
+    z-index: 1000;
+}
+
+/* slide in */
+.mobile-menu.active {
+    transform: translateX(0);
+    display: flex;
+}
+
+/* menu links */
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 3.5px;
+    color: #000;
+}
+
+/* close button */
+.close-menu {
+    align-self: flex-end;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+}
+
+/* ================= LINK BAR ================= */
+.link-box {
+    background-color: #fff;
+    width: 100%;
+    height: 35px;
+}
+
+.link {
+    display: flex;
+    gap: 5.5rem;
+    padding: 7px 5rem 0;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 1.02rem;
+    color: rgb(2, 23, 48);
+    transition: 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.link a:hover,
+.link a:focus {
+    border: none;
+    border-radius: 7px;
+    background-color: #0a89f1;
+    color: #fff;
+    padding: 3.5px;
+    font-size: 1.05rem;
+} 
+
+/* ================= company name ================= */
+.Mentorship-programme {
+    width: 420px;
+    height: 50px;
+    background-color: black;
+    border: none;
+
+}
+
+#Mentorship {
+    font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+/* ================= paragraph ================= */
+#paragraph {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+ /* ================= image1 content  ================= */
+.image1-content {
+    position: relative;
+}
+
+
+/* ================= image 1 ================= */
+.image1 {
+         width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding-bottom: 1.5rem;
+}
+ 
+/* ================= GETIIN ================= */
+#getiin {
+      color: #2e65dd;
+}
+
+/* ================= fig1-3 ================= */
+.fig1-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: -1.2rem;
+}
+
+/* ================= Why-choose-us ================= */
+#Why-choose-us {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 1rem;   
+}
+
+/* ================= fig1 ================= */
+#fig1-img1 {
+    width: 310px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* ================= caption-1 ================= */
+#caption-1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: -2rem;  
+    margin-bottom: 0;
+}
+
+#img-paragraph {
+    padding-top: 0.5rem;
+    word-spacing: 1.4px;
+    width: 290px;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+/* ================= fig2 ================= */
+#fig2-img2 {
+    width: 310px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#caption-2 {
+      text-align: center;
+    font-weight: normal;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -2rem;
+        margin-bottom: 0;  
+}
+
+#img-paragraph2 {
+        padding-top: 0.5rem;
+    word-spacing: 1.4px;
+    width: 290px;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+/* ================= fig3 ================= */
+#fig3-img3 {
+     width: 310px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#caption-3 {
+        text-align: center;
+    font-weight: normal;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -2rem;
+        margin-bottom: 0;
+}
+
+#img-paragraph3 {
+    word-spacing: 1.4px;
+    width: 290px;
+    text-align: center;
+     padding-top: 0.5rem;
+     padding-bottom: 1.8rem;
+}
+
+/* ================= fig1,2,3-content ================= */
+.fig1-content,
+.fig2-content,
+.fig3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 320px;
+}
+
+/* ================= learn-more ================= */
+.learn-more {
+    margin-top: auto;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;      
+    justify-content: center; 
+    color: #fff;
+    background-color: rgb(224, 36, 36);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    color: #000;
+    background-color: #0a89f1;
+    transform: scale(1.1);
+}
+
+/* ================= event heading ================= */
+#events {
+    padding-top: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem; 
+}
+
+/* ================= event imagecontent ================= */
+.event-imagecontent {
+    display: block;
+    justify-content: center; 
+    align-items: center;    
+}
+
+/* ================= events-paragraph ================= */
+#events-paragraph {
+     padding-top: 1rem;
+     color: rgba(0, 0, 0, 0.7);
+}
+
+/* ================= event-1 ================= */
+.event-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.event-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; 
+    display: block;
+}
+
+#CAB-conferences {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-top: 3rem;
+}
+
+#conferences-caption {
+      font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 3rem;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+/* ================= event-2 ================= */
+.event-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= event-3 ================= */
+.event-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#Mentor-Mentee,
+#Media-Engagement {
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 3rem;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-top: -3rem;
+}
+
+#event1-paragraph,
+#event2-paragraph,
+#event3-paragraph {
+    width: 300px;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    min-height: 6.5rem; 
+}
+
+/* ================= see-more ================= */
+.see-more-box {
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 8rem;   
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#see-more {
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: #fff;
+    background-color:  rgb(224, 36, 36);
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#see-more:hover,
+#see-more:focus {
+    color: #000;
+    transform: scale(1.02);
+}
+
+ /* ================= About-CAB  ================= */
+.About-CAB {
+    display: flex;   
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    max-width: 1000px;
+    background-color: #0a89f1;
+    height: 250px;
+      margin: 0 auto;
+}
+
+/* ================= AboutCAB-image ================= */
+#AboutCAB-img {
+    height: 100%;
+    width: auto;
+     max-height: 250px; 
+    object-fit: contain;
+     display: block;
+}
+
+
+/* ================= aboutCAB-header ================= */
+#aboutCAB-header {
+    color: aqua;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+
+}
+
+/* ================= aboutCAB-paragraph ================= */
+.About-CAB p {
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+#discover-cab {
+    color: #000;
+    background-color: aqua;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+#discover-cab:hover,
+#discover-cab:focus {
+ background-color: #fff;
+}
+
+/* ================= Socials ================= */
+#socials-header {
+      padding-top: 3rem; 
+      padding-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.socials a img{
+    transition: transform 0.5s ease;
+}
+
+.socials a:hover img{
+    transform: scale(1.3);
+}
+
+
+/* ================= footer ================= */
+.footer {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    background-color: #0a89f1;
+    color: #fff;
+
+}
+
+/* ================= footer paragraph ================= */
+#footer-paragraph {
+       font-weight: normal;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       padding-top: 9rem;
+       padding-left: 1.5rem;
+       padding-bottom: 2rem;
+}
+
+/* ================= popular links ================= */
+#Popular-links {
+        font-weight: normal;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       padding-left: 1.5rem;
+       padding-bottom: 1.5rem;
+}
+
+/* ================= footer links ================= */
+.footer-links a {
+           text-decoration: none;
+           display: block;
+           color: #fff;
+           margin-bottom: 0.6rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 1.5rem;
+            transition: color 0.3s ease;
+}
+
+.footer-links a:hover  {
+           color: #000;
+}
+
+/* ================= Reach Out header ================= */
+#Reach-Out {
+             font-weight: normal;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       padding: 1.5rem 1.5rem;
+}
+
+/* ================= Reach Out mail ================= */
+.mail {
+    display: flex;
+    font-size: 1.05rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem; 
+}
+
+/* ================= Reach Out telephone ================= */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 1.2rem;
+    margin-top: 1rem; 
+}
+
+/* ================= phone ================= */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ================= copy ================= */
+#copy {
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ================= RESPONSIVE RULES ================= */
+
+/* Desktop & Tablet */
+@media (min-width: 700px) {
+
+    /* Mentorship title on image */
+    .Mentorship-programme {
+        position: absolute;
+        top: 25%;
+        left: 3%;
+        background-color: #fff;
+        padding: 0.7rem 1.2rem;
+        width: auto;
+        height: auto;
+    }
+
+    #Mentorship {
+        padding: 0;
+        font-size: 1.9rem;
+        text-align: left;
+        color: #000;
+    }
+
+    /* paragraph-box */
+    .paragraph-box {
+        position: absolute;
+        top: 41%;
+        left: 3%;
+        max-width: 480px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    /* Paragraph */
+        #paragraph {
+        color: #fff;
+        padding: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    /* Why-choose-us */
+    #Why-choose-us {
+        font-size: 2.5rem;
+    }
+
+    /* learn-more */
+    .learn-more {
+        font-size: 1.2rem;
+         height: 40px;
+         width: 180px;
+    }
+
+      /* event header */
+    #events {
+    padding-left: 5.5rem;
+    }
+
+    /* event paragraph */
+    #events-paragraph {
+     padding-left: 5.5rem;
+    }
+
+    /* see-more */
+    #see-more {
+          font-size: 1.2rem;
+         height: 40px;
+         width: 180px;
+    }
+
+  /* socials-content */
+    .socials-content {
+    padding-left: 6rem;
+}
+}
+
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+
+    /* hide desktop-actions */
+    .desktop-actions {
+        display: none;
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* hide link bar */
+    .link-box {
+        display: none;
+    }
+
+    /* why choose us */
+    #Why-choose-us {
+        padding-top: 1rem;
+    }
+
+    /* fig1-3 */
+    .fig1-3 {
+        margin-top: -1.5rem;
+        gap: 1rem;
+    }
+
+     /* About-CAB */ 
+    .About-CAB {
+        flex-direction: column;      
+        height: auto;                 
+        padding: 1.4rem 1.4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* AboutCAB-img */ 
+    #AboutCAB-img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+      display: block;
+    }
+
+     /* aboutCAB-header */     
+    #aboutCAB-header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    /* About-CAB p */  
+    .About-CAB p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        padding-left: 1.3rem;
+    }
+
+    /* discover-cab */  
+    #discover-cab {
+        margin-left: 1.4rem;
+        width: 90%;       
+        height: 45px;   
+        font-size: 1.2rem;  
+        font-weight: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+     /* social content */
+    .socials-content {
+        padding-left: 2rem;
+    }
+
+     /* footer */
+    .footer {
+           height: 760px;
+    }
+
+     /* hr */
+     hr {
+        display: none;
+    }
+
+         /* footer paragraph */
+     #footer-paragraph {
+        margin-right: 1rem;
+        line-height: 1.5rem;
+        word-spacing: 0.1rem;
+     }
+}
+    
+
+/* ================= (MOBILE ONLY) ================= */
+@media (max-width: 767px) {
+
+     /* events & events-paragraph */
+    #events,
+    #events-paragraph {
+        padding-left: 3rem;
+    }
+}
+
+/* ================= (DESKTOP ONLY) ================= */
+@media (min-width: 768px) {
+
+    /* footer */
+    .footer {
+     height: 620px;
+    }
+ 
+    /* footer top */
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 8.5rem 3rem 2rem;
+        gap: 4rem;
+    }
+
+    /* footer left */
+    .footer-left {
+        max-width: 55%;
+    }
+
+    /* reach out */
+    .reach-out {
+        max-width: 40%;
+    }
+
+    /* footer paragraph */
+    #footer-paragraph {
+        padding-top: 1rem;
+        width: 500px;
+        line-height: 1.5rem;
+        word-spacing: 0.1rem;
+    }
+}
+
+/* ================= events-content FOR DESKTOP/TABLET ================= */
+@media (min-width: 700px) {
+
+    /* event-imagecontent */
+       .event-imagecontent {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        align-items: center;
+       }
+
+      
+}
+
+/* ================= FADE-UP ANIMATION ================= */
+.fade-up {
+    opacity: 0;             
+    transform: translateY(50px); 
+    transition: all 0.8s ease-out; 
+}
+
+.fade-up.show {
+    opacity: 1;               
+    transform: translateY(0); 
+}
+
+/* ================= FADE-LEFT ANIMATION ================= */
+.fade-left {
+    opacity: 0;              
+    transform: translateX(-50px); 
+    transition: all 0.8s ease-out; 
+}
+
+.fade-left.show {
+    opacity: 1;            
+    transform: translateX(0); 
+}
