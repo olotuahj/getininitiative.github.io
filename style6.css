@@ -208,14 +208,19 @@
     text-decoration: none;
 }
 
-/* ================= event a ================= */
-#event a {
+/* ================= team a ================= */
+#team a {
     text-decoration: none;
+}
+
+/* ================= team-Box ================= */
+.team-Box {
+    margin-top: 1rem;
 }
 
 /* ================= RESPONSIVE RULES ================= */
 /* Tablet & Mobile */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
     /* hide desktop-only items */
     .desktop-actions {
@@ -230,6 +235,37 @@
     /* hide link bar */
     .link-box {
         display: none;
+    }
+}
+
+/* ================= (DESKTOP ONLY) ================= */
+@media (min-width: 1024px ) {
+
+      .team-Box {
+        width: 100%;
+        max-width: 1195px;
+        height: 160px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        background-color: #000; 
+        align-items: center;
+    }
+
+    .team-Box h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3.3rem;
+        color: #fff;
+        padding-left: 3rem;
+    }
+
+    .team-image {
+        background-image: url("images/1527_0521_Corporate-group-portrait-bankvicboard-photography.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 700px;    
+        height: 160px;   
     }
 }
 

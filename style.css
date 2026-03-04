@@ -174,16 +174,18 @@
 
 .link {
     display: flex;
-    gap: 5.5rem;
+    gap: 5.6rem;
     padding: 7px 5rem 0;
 }
 
 .link a {
     text-decoration: none;
-    font-size: 1.02rem;
+    font-size: 1.042rem;
     color: rgb(2, 23, 48);
     transition: 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
 }
 
 .link a:hover,
