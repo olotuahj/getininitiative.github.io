@@ -748,7 +748,6 @@ footer hr {
 }
 }
 
-
 /* Tablet & Mobile */
 @media (max-width: 1024px) {
 
@@ -776,37 +775,6 @@ footer hr {
     .fig1-3 {
         margin-top: -1.5rem;
         gap: 1rem;
-    }
-
-     /* About-CAB */ 
-    .About-CAB {
-        flex-direction: column;      
-        height: auto;                 
-        padding: 1.4rem 1.4rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* AboutCAB-img */ 
-    #AboutCAB-img {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
-      display: block;
-    }
-
-     /* aboutCAB-header */     
-    #aboutCAB-header {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    /* About-CAB p */  
-    .About-CAB p {
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-        padding-left: 1.3rem;
     }
 
     /* discover-cab */  
@@ -842,6 +810,64 @@ footer hr {
      }
 }
     
+/* ================= (TABLET ONLY) ================= */
+@media (max-width: 1024px) {
+
+    /* About-CAB */
+    .About-CAB {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 1rem;
+        padding-right: 0.55rem;
+    }
+
+     /* aboutCab-image */
+      .aboutCab-image{
+       flex:1;
+      }
+
+      /* fade-left */
+      .fade-left{
+       flex:1;
+      }
+
+}
+
+/* ================= (MOBILE ONLY) ================= */
+@media (max-width: 800px) {
+          /* About-CAB */ 
+    .About-CAB {
+        flex-direction: column;      
+        height: auto;                 
+        padding: 1.4rem 1.4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* AboutCAB-img */ 
+    #AboutCAB-img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+      display: block;
+    }
+
+     /* aboutCAB-header */     
+    #aboutCAB-header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    /* About-CAB p */  
+    .About-CAB p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        padding-left: 1.3rem;
+    }
+}
 
 /* ================= (MOBILE ONLY) ================= */
 @media (max-width: 767px) {
