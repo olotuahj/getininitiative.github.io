@@ -327,15 +327,15 @@
     font-weight: normal;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -2rem;
+    margin-top: -2.1rem;
         margin-bottom: 0;
+        padding-bottom: 0.6rem;
 }
 
 #img-paragraph3 {
     word-spacing: 1.4px;
     width: 290px;
     text-align: center;
-     padding-top: 0.5rem;
      padding-bottom: 1.8rem;
 }
 
@@ -366,13 +366,12 @@
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.learn-more:hover,
-.learn-more:focus {
+.learn-more:hover {
     color: #000;
     background-color: #0a89f1;
-    transform: scale(1.1);
 }
 
 /* ================= event heading ================= */
@@ -456,10 +455,12 @@
 #event3-paragraph {
     width: 300px;
     text-align: center;
-    line-height: 1.4rem;
-    font-size: 0.95rem;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     min-height: 6.5rem; 
+    word-spacing: 0.05em;
+    line-height: 1.5;
 }
 
 /* ================= see-more ================= */
@@ -467,8 +468,9 @@
     display: flex;
     justify-content: flex-end; 
     padding-right: 8rem;   
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+
 }
 
 #see-more {
@@ -484,6 +486,7 @@
     transition: 0.5s ease;
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border-radius: 7px;
 }
 
 #see-more:hover,
@@ -527,7 +530,7 @@
     line-height: 1.6;
     max-width: 500px;
     margin-bottom: 1.5rem;
-    color: #000;
+    color: #fff;
 }
 
 #discover-cab {
@@ -543,6 +546,7 @@
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+      border-radius: 7px;
 }
 
 #discover-cab:hover,
@@ -727,12 +731,12 @@ footer hr {
 
       /* event header */
     #events {
-    padding-left: 5.5rem;
+    padding-left: 3rem;
     }
 
     /* event paragraph */
     #events-paragraph {
-     padding-left: 5.5rem;
+     padding-left: 3rem;
     }
 
     /* see-more */
@@ -812,7 +816,6 @@ footer hr {
     
 /* ================= (TABLET ONLY) ================= */
 @media (max-width: 1024px) {
-
     /* About-CAB */
     .About-CAB {
         display: flex;
@@ -875,12 +878,47 @@ footer hr {
      /* events & events-paragraph */
     #events,
     #events-paragraph {
-        padding-left: 3rem;
+        padding-left: 1rem;
     }
 }
 
 /* ================= (DESKTOP ONLY) ================= */
 @media (min-width: 768px) {
+    /* figcaption */
+    #caption-1,
+    #caption-2,
+    #caption-3 {
+      font-size: 2rem;
+      padding-top: 1rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: normal;
+    }
+
+    /* events */
+    #events {
+        font-size: 2rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* events-paragraph */
+    #events-paragraph {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: normal;
+         font-size: 1.4rem;
+    }
+
+    /* events-caption */    
+    #conferences-caption,
+    #Mentor-Mentee,
+    #Media-Engagement {
+      font-size: 1.36rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: normal;
+    }
+    
+    #discovercab-p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
     /* footer */
     .footer {
@@ -921,12 +959,233 @@ footer hr {
     /* event-imagecontent */
        .event-imagecontent {
         display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        align-items: center;
+        overflow-x: auto;
+        gap: 5rem;
+        justify-content: flex-start;
        }
 
-      
+       /* event-1 */
+       .event-1 {
+        padding-left: 2rem;
+       }
+}
+
+/* ================= TABLET & MOBILE ================= */
+@media (min-width: 656px) {
+     /* fig1-3 */
+    .fig1-3 {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 5rem;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    /* fig1-content */
+    .fig1-content {
+        padding-left: 2rem;
+    }
+}
+
+/* ================= TABLET & DESKTOP ================= */
+@media (min-width: 780px) {
+    /* WhyChooseUs-content */
+      .WhyChooseUs-content {
+        margin-bottom: 4rem;
+      }
+
+      .fig1-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+      }
+    
+    /* fig-img */
+    #fig1-img1,
+    #fig2-img2,
+    #fig3-img3 {
+        width: 1020px;
+        height: 700px;
+        margin-top: 1.5rem;
+    }
+
+    /* caption */
+    #caption-1,
+    #caption-2,
+    #caption-3 {
+        font-size: 3rem;
+        padding-top: 2.5rem;
+    }
+
+    /* img-paragraph */
+    #img-paragraph,
+    #img-paragraph2,
+    #img-paragraph3 {
+        width: 900px;
+        text-align: left;
+        font-size: 1.5rem;
+        word-spacing: 0.05em;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 700px;
+        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+    }
+}
+
+/* ================= TABLET ONLY ================= */
+@media (min-width: 780px) and (max-width: 1024px) {
+     /* slide-indicator */
+     .slide-indicator {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 8px;
+        justify-content: center;
+    }
+
+     /* slide-count */
+      .slide-count {
+       position: relative;
+       font-size: 1.4rem;
+       font-weight: 800;
+       display: flex;   
+       align-items: center;
+       width: 100%;
+       max-width: 650px;
+    }
+
+    /* slide-count */
+      .slide-count::after {
+        content: "";
+        display: inline-block;       
+        height: 4px;          
+        background-color: black;
+        margin-left: 12px;     
+        vertical-align: middle;
+         flex: 1;
+     }
+
+     /* arrows container */
+     .arrows{
+     display:flex;
+     gap: 8px;
+    }
+
+    /* arrows container */
+    .arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+       /* arrow circles */
+      .arrow{
+        width:45px;
+        height:45px;
+        border-radius:50%;
+        border:1px solid #000;
+        background:white;
+        font-size:1.5rem;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:all 0.3s ease;
+      }
+
+     /* hover effect */
+     .arrow:hover{
+      background:#000;
+      transform:scale(1.1);
+      color: #fff;
+    }
+
+}
+
+/* ================= DESKTOP ONLY ================= */
+@media (min-width: 1025px){
+     /* slide-indicator */
+     .slide-indicator {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 8px;
+        justify-content: center;
+    }
+
+     /* slide-count */
+      .slide-count {
+       position: relative;
+       font-size: 1.4rem;
+       font-weight: 800;
+       display: flex;   
+       align-items: center;
+       width: 900px;
+    }
+
+    /* slide-count */
+      .slide-count::after {
+        content: "";
+        display: inline-block;       
+        height: 4px;          
+        background-color: black;
+        margin-left: 12px;     
+        vertical-align: middle;
+         flex: 1;
+     }
+
+     /* arrows container */
+     .arrows{
+     display:flex;
+     gap: 8px;
+    }
+
+    /* arrows container */
+    .arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+       /* arrow circles */
+      .arrow{
+        width:45px;
+        height:45px;
+        border-radius:50%;
+        border:1px solid #000;
+        background:white;
+        font-size:1.5rem;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:all 0.3s ease;
+      }
+
+     /* hover effect */
+     .arrow:hover{
+      background:#000;
+      transform:scale(1.1);
+      color: #fff;
+    }
+}
+
+/* ================= TABLET & MOBILE ================= */
+@media (max-width: 779px) {
+      /* fig-content */
+    .fig1-content,
+    .fig2-content,
+    .fig3-content {
+        display: flex !important;
+    }
+
+    /* hover effect */
+.slide-indicator {
+    display: none;
+}
 }
 
 /* ================= FADE-UP ANIMATION ================= */

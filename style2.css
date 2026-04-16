@@ -195,6 +195,8 @@
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-color: rgba(2, 23, 48, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
 }
 
 #home a:hover,
@@ -211,6 +213,8 @@
 /* ================= us a ================= */
 #us a {
     text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
 }
 
 /* ================= image1 content  ================= */
@@ -243,7 +247,7 @@
 /* ================= heading1 ================= */
 #heading1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 1rem 0px 7px 1.2rem;
 }
 
@@ -255,7 +259,7 @@
 /* ================= GETIN-paragraph  ================= */
 #GETIN-paragraph 
 {
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     padding: 0px 1rem 3rem 1.2rem;
 }
 
@@ -542,13 +546,6 @@ footer hr {
         max-width: 40%;
     }
 
-    /* footer paragraph */
-    #footer-paragraph {
-        padding-top: 1rem;
-        width: 500px;
-        line-height: 1.5rem;
-        word-spacing: 0.1rem;
-    }
 }
 
 /* ================= MOBILE ONLY ================= */
@@ -657,6 +654,105 @@ footer hr {
     .socials-content {
     padding-left: 6rem;
 }
+}
+
+/* ================= TABLET ONLY ================= */
+@media (min-width:768px) and (max-width:1024px) {
+    /* heading1 */
+         #heading1 {
+            font-size: 2rem;
+         }
+           
+         /* GETIN-paragraph */
+         #GETIN-paragraph {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* what-we-do */
+         #what-we-do {
+           font-size: 28px;
+         }
+
+         /* program-paragraph2 */
+         #program-paragraph2 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* program-paragraph3 */
+         #program-paragraph3 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+          /* Programs-header */
+         #Programs-header {
+            font-size: 2rem;
+         }
+
+         /* program-paragraph */
+         #program-paragraph {
+             font-size: 20px;
+         }
+         
+    /* footer paragraph */
+    #footer-paragraph {
+        padding-top: 1rem;
+        width: 400px;
+        line-height: 1.6rem;
+        word-spacing: 0.1rem;
+    }
+}
+
+/* ================= DESKTOP ONLY ================= */
+@media (min-width:1025px) {
+    /* heading1 */
+         #heading1 {
+            font-size: 2rem;
+         }
+           
+         /* GETIN-paragraph */
+         #GETIN-paragraph {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* what-we-do */
+         #what-we-do {
+           font-size: 28px;
+         }
+
+         /* program-paragraph2 */
+         #program-paragraph2 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* program-paragraph3 */
+         #program-paragraph3 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+          /* Programs-header */
+         #Programs-header {
+            font-size: 2rem;
+         }
+
+         /* program-paragraph */
+         #program-paragraph {
+             font-size: 20px;
+         }
+
+             /* footer paragraph */
+    #footer-paragraph {
+        padding-top: 1rem;
+        width: 500px;
+        line-height: 1.6rem;
+        word-spacing: 0.1rem;
+    }
+
 }
 
 /* ================= FADE-UP ANIMATION ================= */
