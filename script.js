@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.remove('active');
     });
 
-    // Rocket button
-    const rocketBtn = document.querySelector('.rocket-box');
-    const aboutCab = document.getElementById('about-cab');
-
-    rocketBtn.addEventListener('click', () => {
-        rocketBtn.classList.toggle('active-border');
-
         // smooth scroll to About CAB
         aboutCab.scrollIntoView({
             behavior: 'smooth',
@@ -89,6 +82,4 @@ backBtn.addEventListener("click", () => {
 
 // initial
 showSlide(currentSlide);
-
-});
 

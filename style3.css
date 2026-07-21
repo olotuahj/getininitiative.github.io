@@ -49,22 +49,23 @@
     align-items: center;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
-    background: linear-gradient(
-        90deg,
-        #0a89f1 0%,
-        #0a89f1 10%,
-        #2e65dd 45%,
-        #2e65dd 100%
-    );
+    color:  #000;
+    background: #ffd400;
     border-radius: 5px;
     font-size: large;
     transition: all 0.3s ease;
 }
 
-#CAB:hover,
+#CAB:hover {
+    color: #000;
+    background-color: #fff;
+}
+
 #CAB:focus {
+     color: #000;
+    background-color: #fff;
     outline: 2px solid #ffd400;
+    outline-offset: 3px;
 }
 
 /* ================= HAMBURGER ================= */
@@ -142,33 +143,34 @@
 
 .link {
     display: flex;
-    gap: 5.5rem;
+    gap: 5.8rem;
     padding: 7px 5rem 0;
 }
 
 .link a {
     text-decoration: none;
-    font-size: 1.042rem; 
     color: rgb(2, 23, 48);
     transition: 0.3s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
 }
 
 .link a:hover,
 .link a:focus {
     border: none;
-    border-radius: 7px;
+    transform: scale(1.1);
     background-color: #0a89f1;
     color: #fff;
-    padding: 3.5px;
-    font-size: 1.05rem;
+    
 } 
 
 /* ================= programs.. bar ================= */
 .programs-bar {
-        background-color: #eeeeee;
+       background-color: #0a89f1;
     width: 100%;
     height: 40px;
 }
@@ -182,35 +184,11 @@
 
 /* ================= programs-droplink a ================= */
 .programs-droplink a {
-    text-decoration: none;
-    font-size: 1.02rem;
-    color: rgb(2, 23, 48);
-    transition: all 0.3s ease;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     
-}
-
-/* ================= home a ================= */
-#home a{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(2, 23, 48, 0.5);
-}
-
-#home a:hover,
-#home a:focus {
-    border: none;
-    border-radius: 7px;
-    background-color: #0a89f1;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 5px;
-    font-size: 1.05rem;
-    text-decoration: none;
-}
-
-/* ================= programs a ================= */
-#Programs a {
-    text-decoration: none;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
 }
 
 /* ================= image1 content program  ================= */
@@ -237,7 +215,7 @@
 
 /* ================= Programs-header ================= */
 #Programs-header {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -248,7 +226,7 @@
         max-width: 480px;
         background-color: #0a89f1;
         display: flex;
-        color: #fff;
+        color: #000;
        margin: auto;
        justify-content: center;
        align-items: center;
@@ -263,20 +241,20 @@
 
 /* ================= ourcourses-box ================= */
 .ourcourses-box {
-        background-color: #d1d5db;
+        background-color: #2e65dd;
     width: 100%;
     height: 60px; 
     align-items: center;
     justify-content: center;
     display: flex;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 /* ================= our-courses ================= */
 #our-courses {
          font-size: 1.5rem;
          font-weight: normal;
+         color: #fff;
 }
 
 /* ================= programs-courses ================= */
@@ -298,7 +276,7 @@
 
 /* ================= Workshop-img ================= */
 #Workshop-img {
-     width: 600px;
+     width: 550px;
     height: 400px;
     object-fit: contain;
     display: block;
@@ -312,7 +290,7 @@
        font-weight: normal;
        font-size: 1.2rem;
        text-align: center;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-family: Arial, sans-serif;
 }
 
 /* ================= workshop ================= */
@@ -338,7 +316,7 @@
 
 /* ================= shortcourses-img ================= */
 #shortcourses-img {
-     width: 600px;
+     width: 550px;
     height: 400px;
     object-fit: contain;
     display: block;
@@ -352,7 +330,7 @@
        font-weight: normal;
        font-size: 1.2rem;
        text-align: center;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-family: Arial, sans-serif;
 }
 
 /* ================= shortcourses ================= */
@@ -369,7 +347,7 @@
 }
 
 /* ================= program3 ================= */
-.program1 {
+.program3 {
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -377,7 +355,7 @@
 
 /* ================= CERTIFICATION-COURSES-img ================= */
 #CERTIFICATION-COURSES-img {
-     width: 600px;
+     width: 550px;
     height: 400px;
     object-fit: contain;
     display: block;
@@ -391,7 +369,7 @@
        font-weight: normal;
        font-size: 1.2rem;
        text-align: center;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: Arial, sans-serif;
 }
 
 /* ================= CERTIFICATION-COURSES ================= */
@@ -407,47 +385,6 @@
     cursor: pointer;
 }
 
-/* ================= footer ================= */
-.footer {
-    width: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
-    background-color: #0a89f1;
-    color: #fff;
-
-}
-
-/* ================= footer paragraph ================= */
-#footer-paragraph {
-       font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding-top: 9rem;
-       padding-left: 1.5rem;
-       padding-bottom: 2rem;
-}
-
-/* ================= popular links ================= */
-#Popular-links {
-        font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding-left: 1.5rem;
-       padding-bottom: 1.5rem;
-}
-
-/* ================= footer links ================= */
-.footer-links a {
-           text-decoration: none;
-           display: block;
-           color: #fff;
-           margin-bottom: 0.6rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding-left: 1.5rem;
-            transition: color 0.3s ease;
-}
-
 .footer-links a:hover  {
            color: #000;
 }
@@ -455,31 +392,20 @@
 /* ================= Reach Out header ================= */
 #Reach-Out {
              font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding: 1.5rem 1.5rem;
+       font-family: Arial, sans-serif;
 }
 
 /* ================= Reach Out mail ================= */
 .mail {
-    display: flex;
     font-size: 1.05rem;
-    align-items: center;
-    gap: 0.5rem; 
     color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 1.5rem;
-    margin-top: 0.5rem; 
+    font-family: Arial, sans-serif
 }
 
 /* ================= Reach Out telephone ================= */
-#telephone {
-     display: flex;
-    align-items: center;
-    gap: 0.5rem; 
+#telephone { 
     color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 1.2rem;
-    margin-top: 1rem; 
+    font-family: Arial, sans-serif
 }
 
 /* ================= phone ================= */
@@ -504,7 +430,7 @@ footer hr {
 #copy {
     padding-top: 2rem;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* ================= RESPONSIVE RULES ================= */
@@ -520,28 +446,64 @@ footer hr {
     .hamburger {
         display: block;
     }
-
+    
     /* hide link bar */
     .link-box {
         display: none;
     }
 
-     /* footer */
-    .footer {
-           height: 760px;
-    }
+    /*  programs bar  */
+.programs-bar {
+       background-color: #fff;
+    width: 100%;
+    height: 40px;
+}
+
+/*  programs-droplink */
+.programs-droplink {
+    display: flex;
+    padding: 7px 0px 0px 1.3rem;
+    gap: 0.5rem;
+}
+
+/*  programs-droplink a  */
+.programs-droplink a {
+    font-size: 1.02rem;
+    color: #000;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
+     font-weight: normal;
+     
+}
+
+/* home a  */
+#home a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #000;
+}
+
+#home a:hover,
+#home a:focus {
+     border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+#slash{
+    font-weight: bold;
+}
 
      /* hr */
      hr {
         display: none;
     }
 
-         /* footer paragraph */
-     #footer-paragraph {
-        margin-right: 1rem;
-        line-height: 1.5rem;
-        word-spacing: 0.1rem;
-     }
 }
 
 /* ================= (DESKTOP ONLY) ================= */
@@ -553,42 +515,16 @@ footer hr {
     padding: 7px 5rem 0;
     gap: 0.5rem;
 }
-   
-     /* footer */
-    .footer {
-     height: 620px;
-    }
- 
-    /* footer top */
-    .footer-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 8.5rem 3rem 2rem;
-        gap: 4rem;
-    }
 
-    /* footer left */
-    .footer-left {
-        max-width: 55%;
-    }
-
-    /* reach out */
-    .reach-out {
-        max-width: 40%;
-    }
-
-    /* footer paragraph */
-    #footer-paragraph {
-        padding-top: 1rem;
-        width: 500px;
-        line-height: 1.5rem;
-        word-spacing: 0.1rem;
-    }
+ /* our-courses */
+#our-courses {
+    font-size: 2rem;
+}
 }
 
 /* ================= PROGRAMS HEADER FOR DESKTOP/TABLET ================= */
 @media (min-width: 501px) {
+    /* Programs-header */
     #Programs-header {
         position: absolute;
         top: 50%;
@@ -619,13 +555,765 @@ footer hr {
 
     /* ourcourses-box */
     .ourcourses-box {
-        background-color: #d1d5db;
+        background-color: #2e65dd;
     width: 100%;
     height: 60px;
 }
 }
 
+/* ================= MOBILE =================*/
+@media (max-width: 767px){
+    /* programs a */
+   #Programs a{
+    text-decoration: none;
+   }
 
+   /* programs-courses */
+        .programs-courses {
+        background-color: #c6dfee;
+        }
+
+    /* program-paragraphs */
+        #program1-paragraph,
+        #program2-paragraph,
+        #program3-paragraph {
+       font-size: 1.35rem;
+       letter-spacing: 0.5px;
+       word-spacing: 0.1em;
+       font-family: Arial, sans-serif;
+       font-weight: normal;
+       width: 67%;
+        }
+
+        /* program-applylink */
+.program-applylink {
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #2e65dd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    color: #2e65dd;
+    background-color: transparent;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.program-applylink:hover {
+    background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+}
+
+.program-applylink:focus {
+     background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+    color: #000;
+}
+
+/* big-box */
+.big-box{
+    height: 650px;
+    width: 500px;
+    background: #003b66;
+}
+
+/*box-content */
+.box-content {
+    color: #d7e6ef;
+}
+
+/*box-content h1 */
+.box-content h1{
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin: 24px auto;
+    padding: 0 10px;
+     width: 70%;
+     text-align: center;
+}
+
+/*box-content p */
+.box-content p {
+    line-height: 1.7;
+     font-size: 1.5rem;
+     margin-bottom: 50px;
+     width: 70%;
+     margin: 0 auto 50px;
+     padding: 0 10px;
+     text-align: center;
+}
+
+#Conference{
+    color: yellow;
+}
+
+/* btn */
+.btn {
+    padding: 15px 30px;
+    background-color: #C6E0EF;
+    color: #000;
+    border: none;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer; 
+    font-size: 1.4rem;
+    margin-left: 6rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.btn:focus {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+/* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
+
+/* ================= Tablet & Desktop ================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+     /* programs-droplink */
+    .programs-droplink a{
+        text-decoration: none;
+    }
+
+    /* programs-courses */
+        .programs-courses {
+             background-color: #c6dfee;
+        }
+
+      /* Workshop-img, shortcourses-img, CERTIFICATION-COURSES-img */
+     #Workshop-img,
+     #shortcourses-img,
+    #CERTIFICATION-COURSES-img{
+    flex: 1;
+    width: 800px;
+    height: 400px;
+    object-position: top;
+    display: block;
+}
+
+      /* program-paragraphs */
+        #program1-paragraph,
+        #program2-paragraph,
+        #program3-paragraph {
+       font-size: 1.8rem;
+       letter-spacing: 0.5px;
+       word-spacing: 0.1em;
+        }
+
+        /* program-applylink */
+.program-applylink {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #2e65dd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    color: #2e65dd;
+    background-color: transparent;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.program-applylink:hover {
+    background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+}
+
+.program-applylink:focus {
+     background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+    color: #000;
+}
+
+/* big-box */
+.big-box{
+    position: relative;
+    height: 500px;
+    width: 600px;
+    background: #003b66;
+}
+
+.big-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 80px;
+    height: 70px;
+    background: #003b66;
+}
+
+/*box-content */
+.box-content {
+    position: relative;
+    color: #d7e6ef;
+    padding: 20px;
+}
+
+/*box-content h1 */
+.box-content h1{
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*box-content p */
+.box-content p {
+    line-height: 1.7;
+     font-size: 1.6rem;
+     margin-bottom: 50px;
+}
+
+#Conference{
+    color: yellow;
+}
+
+/* btn */
+.btn {
+    padding: 15px 30px;
+    background-color: #C6E0EF;
+    color: #000;
+    border: none;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer; 
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.btn:focus {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+/* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 700px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+}
+
+/* ================= Desktop ================= */
+@media (min-width: 1025px) {
+     /* home, slash */
+    #home,
+    #slash {
+        display: none;
+    }
+
+    /* programs-droplink */
+    .programs-droplink a{
+        text-decoration: none;
+    }
+
+    /* programs-courses */
+    .programs-courses {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: #c6dfee;
+          padding-left: 2rem;
+          gap: 2rem;
+}
+
+/* program-applylink */
+.program-applylink {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #2e65dd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    color: #2e65dd;
+    background-color: transparent;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.program-applylink:hover {
+    background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+}
+
+.program-applylink:focus {
+     background: linear-gradient(
+        180deg,
+        #5b8cff,
+        #2e65dd,
+        #1d4fbf
+    );
+    color: #fff;
+    border: none;
+    color: #000;
+}
+
+
+/* big-box */
+.big-box{
+    position: relative;
+    height: 500px;
+    width: 450px;
+    background: #003b66;
+}
+
+.big-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 80px;
+    height: 70px;
+    background: #003b66;
+}
+
+/*box-content */
+.box-content {
+    position: relative;
+    color: #d7e6ef;
+    padding: 20px;
+}
+
+/*box-content h1 */
+.box-content h1{
+    font-size: 42px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*box-content p */
+.box-content p {
+    line-height: 1.7;
+     font-size: 1.4rem;
+     margin-bottom: 30px;
+}
+
+/* btn */
+.btn {
+    padding: 15px 20px;
+    background-color: #C6E0EF;
+    color: #000;
+    border: none;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer; 
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.btn:focus {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+/* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 650px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 90px 30px 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+/* left-side, right-side */
+.left-side {
+     width: 50%;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding: 1.5rem 1.5rem;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.05rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.2rem;
+    margin-top: 1rem; 
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 50px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0;
+    gap: 2rem;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+@media (min-width: 500px) and (max-width: 700px) {
+    /* footer */
+    .footer{
+        height: 800px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 400px) {
+    /* footer */
+    .footer{
+        height: 1000px;
+    }
+}
 
 
 /* ================= FADE-UP ANIMATION ================= */

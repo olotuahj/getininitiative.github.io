@@ -27,4 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
 
     faders.forEach(fader => appearOnScroll.observe(fader));
+
+
 });
