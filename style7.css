@@ -1,0 +1,1394 @@
+/* ================= RESET ================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================= LAYOUT ================= */
+.about-page {
+    width: 100%;
+    max-width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    overflow: scroll;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    background-color: #c6dfee;
+}
+
+.top-bar {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #0a89f1;
+    padding: 1.5rem 5rem 1.5rem 1rem;
+    color: #fff;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* ================= DESKTOP ACTIONS ================= */
+.desktop-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* ================= CAB BUTTON ================= */
+#CAB {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        #0a89f1 0%,
+        #0a89f1 10%,
+        #2e65dd 45%,
+        #2e65dd 100%
+    );
+    border-radius: 5px;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+
+#CAB:hover,
+#CAB:focus {
+    outline: 2px solid #ffd400;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================= MOBILE SLIDE MENU ================= */
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30%;
+    min-width: 260px;
+    height: 100%;
+
+    background-color: #2e65dd;
+    padding: 2rem 1.5rem;
+
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+
+    z-index: 1000;
+}
+
+/* slide in */
+.mobile-menu.active {
+    transform: translateX(0);
+    display: flex;
+}
+
+/* menu links */
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 3.5px;
+    color: #000;
+}
+
+/* close button */
+.close-menu {
+    align-self: flex-end;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+}
+
+/* ================= LINK BAR ================= */
+.link-box {
+    background-color: #fff;
+    width: 100%;
+    height: 35px;
+}
+
+.link {
+    display: flex;
+    gap: 5.8rem;
+    padding: 7px 5rem 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(2, 23, 48);
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.link a:hover,
+.link a:focus {
+    border: none;
+    transform: scale(1.1);
+    background-color: #0a89f1;
+    color: #fff;
+    
+} 
+
+/* ================= contactus.. bar ================= */
+.contactus-bar {
+        background-color: #0a89f1;
+    width: 100%;
+    height: 40px;
+}
+
+/* ================= contactus-droplink ================= */
+.contactus-droplink {
+    display: flex;
+    padding: 7px 0px 0px 1.3rem;
+    gap: 0.5rem;
+}
+
+/* ================= contactus-droplink a ================= */
+.contactus-droplink a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
+}
+
+/* ================= home a ================= */
+#home a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #fff;
+}
+
+#home a:hover,
+#home a:focus {
+    border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+/* ================= contactus a ================= */
+#contactus a {
+    text-decoration: none;
+}
+
+/* ================= image1 content contactus  ================= */
+.image1-content-contactus {
+    position: relative;
+}
+
+.image1-content-contactus::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.30); 
+    z-index: 1;
+}
+
+
+/* ================= image 1 contactus ================= */
+.image1-contactus {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+/* ================= img1-contactus ================= */
+#img1-contactus {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ================= contactus-header ================= */
+  #contactus-header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        z-index: 2;
+        text-shadow:
+            0 4px 10px rgba(0, 0, 0, 0.6),
+            0 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+#Find-Contact-Information {
+    font-weight: normal;
+    padding-left: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* ================= callUs ================= */
+#callUs {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    color: #2e65dd;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= customerSupport ================= */
+#customerSupport {
+     color: #000; 
+     padding-bottom: 12px;
+}
+
+/* ================= phone-line ================= */
+.phone-line {
+    display: flex;
+    align-items: center;   
+    gap: 8px;              
+}
+
+/* ================= phone-icon ================= */
+.phone-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #000; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.phone-icon:hover {
+    border: 2px solid #26A9DE;
+    background-color: white;
+}
+
+/* ================= phone-icon img================= */
+.phone-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.phone-icon img {
+    transition: transform 1s ease;
+}
+
+.phone-icon:hover img {
+   transform: scale(1.2);
+}
+
+/* ================= phone ================= */
+#phone {
+    transition: all 0.3s ease;
+}
+
+#phone:hover {
+     background-color:  #0F7CA6;
+     border-radius: 5px;
+     padding: 0.5rem 1rem;
+     color: #fff;
+}
+
+/* ================= emailUs ================= */
+#emailUs {
+    padding-top: 2rem;
+    padding-bottom: 8px;
+    color: #2e65dd;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= mailSupport ================= */
+#mailSupport {
+     color: #000;
+     padding-bottom: 8px;
+}
+
+/* ================= email-line ================= */
+.email-line {
+    display: flex;
+    align-items: center;   
+    gap: 8px;              
+}
+
+/* ================= email-icon ================= */
+.email-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 2px solid transparent 
+}
+
+.email-icon:hover {
+        border: 2px solid #26A9DE;
+    background-color: white;
+}
+
+/* ================= email-icon img================= */
+.email-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.email-icon img {
+    transition: transform 1s ease;
+}
+
+.email-icon:hover img {
+   transform: scale(1.2);
+}
+
+/* ================= email ================= */
+#email {
+   transition: all 0.3s ease;
+}
+
+#email:hover {
+     background-color:  #0F7CA6;
+     border-radius: 5px;
+     padding: 0.5rem 1rem;
+     color: #fff;
+}
+
+/* ================= stay-connected ================= */
+#stay-connected {
+    padding-top: 2rem;
+    padding-bottom: 8px;
+    color: #2e65dd;
+    font-family: Arial, sans-serif
+}
+
+/* ================= social-Media ================= */
+#social-Media {
+     color: #000; 
+     padding-bottom: 8px;
+}
+
+/* ================= socials ================= */
+.socials {
+    display: flex;
+    align-items: center;   
+    gap: 16px;              
+}
+
+.socials a img{
+    transition: transform 0.5s ease;
+}
+
+.socials a:hover img{
+    transform: scale(1.3);
+}
+
+/* ================= question ================= */
+.question {
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.question-leftside {
+    padding-bottom: 20px; 
+}
+   
+/* ================= question-p ================= */
+#question-p {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #0a89f1;
+}
+
+/* ================= question-rightside ================= */
+.question-rightside form {
+    display: flex;
+    flex-direction: column;
+     gap: 1rem;
+}
+
+/* ================= question-rightside (input, textarea) ================= */
+.question-rightside input,
+.question-rightside textarea{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.question-rightside input:hover {
+     border-color: #000;
+}
+
+.question-rightside textarea:hover {
+    border-color: #000;
+}
+
+/* ================= submit ================= */
+#submit {
+    background-color: #f1d63c;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0F7CA6;
+    color: #000;
+} 
+
+/* ================= map iframe ================= */
+.map iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+.footer-links a:hover  {
+           color: #000;
+}
+
+/* ================= Reach Out header ================= */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+}
+
+/* ================= Reach Out mail ================= */
+.mail {
+    font-size: 1.05rem;
+    color: #fff;
+    font-family: Arial, sans-serif
+}
+
+/* ================= Reach Out telephone ================= */
+#telephone { 
+    color: #fff;
+    font-family: Arial, sans-serif
+}
+
+/* ================= phone ================= */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ================= copy ================= */
+#copy {
+    padding-top: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= RESPONSIVE RULES ================= */
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+/*  contactus bar  */
+.contactus-bar {
+       background-color: #fff;
+    width: 100%;
+    height: 40px;
+}
+
+/*  contactus-droplink */
+.contactus-droplink {
+    display: flex;
+    padding: 7px 0px 0px 1.3rem;
+    gap: 0.5rem;
+}
+
+/*  contactus-droplink a  */
+.contactus-droplink a {
+    font-size: 1.02rem;
+    color: #000;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
+     font-weight: normal;
+     
+}
+
+/* home a  */
+#home a{
+    text-decoration-color: #000;
+    text-decoration-color: #000;
+}
+
+#home a:hover,
+#home a:focus {
+    background-color: #0a89f1;
+    color: #fff;
+}
+
+    /* hide desktop-only items */
+    .desktop-actions {
+        display: none;
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* hide link bar */
+    .link-box {
+        display: none;
+    }
+
+#slash{
+    font-weight: bold;
+}
+
+     /* hr */
+     hr {
+        display: none;
+    }
+}
+
+/* ================= (MOBILE ONLY) ================= */
+@media (max-width: 767px) {
+        /* contact-us a */
+   #contact-us a{
+    text-decoration: none;
+   }
+    /*  Contact-Information  */
+    .Contact-Information {
+       margin-top: 2rem;
+         background-color: #0a89f1;
+       text-align: center;
+    }
+
+    /*  Find-Contact-Information  */
+    #Find-Contact-Information{
+        padding: 1rem;
+        color: #fff;
+    }
+
+    /*  ReachOut-contact  */
+.ReachOut-contact {
+    padding: 3rem 0rem 1rem 0rem;
+}
+
+/*  Access-Dedicated  */
+#Access-Dedicated {
+    font-family: Arial, sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+/*  Access-Dedicated  */
+#Access-Dedicated-paragraph {
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #000;
+      width: 90%;
+      margin: 0 auto;
+}
+
+        /* ReachOut-contact h3 */
+    .ReachOut-contact h3 {
+        font-size: 2.1rem;
+        padding-left: 2rem;
+    }
+
+      /* ReachOut-contact p */
+    .ReachOut-contact p {
+        font-size: 1.8rem;
+        letter-spacing: 0.5px;
+        padding-left: 2rem;
+    }
+
+    /* email-line, phone-line */
+    .email-line,
+    .phone-line{
+      padding-left: 2rem;
+    }
+    
+
+    /* phone email */
+    #phone,
+    #email{
+        font-size: 1.4rem;
+    }
+
+    #email{
+        width: 10%;
+    }
+
+    /* socials */
+    .socials{
+        padding-left: 2rem;
+    }
+
+    /* question */
+    .question {
+        position: relative;
+        background-color: #0a89f1;
+        height: 620px;
+    }
+
+    .question img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 0.8;
+    }
+
+    /* question-leftside, question-rightside */
+    .question-leftside,
+     .question-rightside {
+    position: absolute;
+    color: #fff;
+    flex: 1;
+    z-index: 1;
+    }
+
+    /* question-p */
+    #question-p {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #f1d63c;
+        padding: 10px;
+        border-radius: 8px;
+        line-height: 1.6;
+    }
+    
+    /* question-leftside */
+    .question-leftside {
+        top: 40px;
+        left: 20px;
+        max-width: 90%;
+    }
+
+    /* question-rightside */
+    .question-rightside {
+        top: 200px;
+        left: 11%;
+        max-width: 80%;
+    }
+
+    /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
+
+/* ================= (TABLET ONLY) ================= */
+@media (min-width: 768px) and (max-width:1024px){
+     /* contactus-droplink */
+    .contactus-droplink a{
+        text-decoration: none;
+    }
+
+         /* contactus-droplink */
+   .contactus-droplink {
+    display: flex;
+    padding: 7px 5rem 0;
+    gap: 0.5rem;
+   }
+
+       /*  Contact-Information  */
+   .Contact-Information {
+         background-color: #0a89f1;
+    width: 100%;
+    height: 60px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*  Find-Contact-Information  */
+#Find-Contact-Information{
+    color: #fff;
+}
+    
+    /*  ReachOut-contact  */
+  .ReachOut-contact {
+    padding: 1rem 5rem 2rem 5rem;
+}
+ 
+       /*  Access-Dedicated */
+      #Access-Dedicated {
+        font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+    }
+    
+      /*  Access-Dedicated-paragraph */
+      #Access-Dedicated-paragraph {
+        line-height: 1.6;
+        text-align: left;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+      }
+
+        /* ReachOut-contact h3 */
+    .ReachOut-contact h3 {
+        font-size: 2.3rem;
+    }
+
+      /* ReachOut-contact p */
+    .ReachOut-contact p {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+
+    #phone,
+    #email{
+        font-size: 1.5rem;
+    }
+
+
+
+       /* question */
+    .question {
+        position: relative;
+        background-color: #0a89f1;
+    }
+
+    .question img {
+        width: 100%;
+        display: block;
+        opacity: 0.8;
+    }
+
+    /* question-leftside, question-rightside */
+    .question-leftside,
+     .question-rightside {
+    position: absolute;
+    color: #fff;
+    flex: 1;
+    z-index: 1;
+    }
+
+    /* question-p */
+    #question-p {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #f1d63c;
+        padding: 10px;
+        border-radius: 8px;
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+        line-height: 4;
+    }
+    
+    /* question-leftside */
+    .question-leftside {
+        top: 150px;
+        left: 50px;
+        max-width: 40%;
+    }
+
+    /* question-rightside */
+    .question-rightside {
+        bottom: 90px;
+        right: 50px;
+        max-width: 45%;
+    }
+
+    /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 700px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+   
+}
+
+/* ================= CONTACTUS HEADER FOR DESKTOP/TABLET ================= */
+@media (max-width: 761px) {
+    /* contactus-header */
+    #contactus-header {
+        font-size: 1rem;
+    }
+}
+
+/* ================= Reach-Out (DESKTOP ONLY) ================= */
+@media (min-width: 1025px) {
+         /* home, slash */
+    #home,
+    #slash {
+        display: none;
+    }
+
+    /* contactus-droplink */
+    .contactus-droplink a{
+        text-decoration: none;
+    }
+
+        /* contactus-droplink */
+   .contactus-droplink {
+    display: flex;
+    padding: 7px 5rem 0;
+    gap: 0.5rem;
+   }
+
+   /*  Contact-Information  */
+   .Contact-Information {
+        background-color: #0a89f1;
+    width: 100%;
+    height: 60px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#Find-Contact-Information{
+    color: #fff;
+}
+
+         /*  ReachOut-contact  */
+    .ReachOut-contact {
+    padding: 3rem 0rem 1rem 5rem;
+     display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+        /* contact-left */
+      .contact-left {
+        flex: 1;
+        max-width: 500px;
+    }
+
+      /*  Access-Dedicated  */
+     #Access-Dedicated {
+    font-family: Arial, sans-serif;
+    padding-bottom: 10px;
+    font-size: 2.4rem;
+    }
+      
+           /* Access-Dedicated-paragraph */
+    #Access-Dedicated-paragraph {
+         line-height: 2rem;
+            max-width: 500px;
+             width: 100%;
+             word-spacing: 0.1em;
+    } 
+
+    /*  callUs  */
+    #callUs {
+    padding-top: 2rem;
+    padding-bottom: 12px;
+    color: #2e65dd;
+    font-family: Arial,sans-serif
+    }
+
+      /* ReachOut-contact h2 */
+     .ReachOut-contact h2 {
+        font-size: 2rem;
+    }
+
+
+    /* contact-right */
+    .contact-right {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    /* ReachOut-contact h3 */
+    .ReachOut-contact h3 {
+        font-size: 2rem;
+    }
+
+    /* ReachOut-contact p */
+    .ReachOut-contact p {
+        font-size: 1.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* phone, email */
+    #phone,
+    #email {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+     /* question */
+    .question {
+        position: relative;
+        background-color: #0a89f1;
+    }
+
+    .question img {
+        width: 100%;
+        display: block;
+        opacity: 0.8;
+    }
+
+    /* question-leftside */
+    .question-leftside,
+     .question-rightside {
+    position: absolute;
+    color: #fff;
+    flex: 1;
+    }
+
+    /* question-p */
+    #question-p {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #f1d63c;
+        padding: 10px;
+        border-radius: 8px;
+        letter-spacing: 0.5px;
+        font-size: 2rem;
+    }
+    
+    /* question-leftside */
+    .question-leftside {
+        top: 300px;
+        left: 50px;
+        width: 550px;
+    }
+
+    /* question-rightside */
+    .question-rightside {
+        bottom: 200px;
+        right: 50px;
+    }
+
+    /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 650px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 90px 30px 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+/* left-side, right-side */
+.left-side {
+     width: 50%;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding: 1.5rem 1.5rem;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.05rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.2rem;
+    margin-top: 1rem; 
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 50px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0;
+    gap: 2rem;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+   
+}
+
+/* ================= Reach-Out FOR mobile ================= */
+@media (max-width: 500px) {
+    /* ReachOut-contact */
+    .ReachOut-contact { 
+        padding: 2rem 1rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (min-width: 500px) and (max-width: 700px) {
+    /* footer */
+    .footer{
+        height: 800px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 450px) {
+        /* socials-header */
+    #socials-header{
+        width: 70%;
+    }
+    /* footer */
+    .footer{
+        height: 980px;
+    }
+}
+
+/* ================= FADE-UP ANIMATION ================= */
+.fade-up {
+    opacity: 0;             
+    transform: translateY(50px); 
+    transition: all 0.8s ease-out; 
+}
+
+.fade-up.show {
+    opacity: 1;               
+    transform: translateY(0); 
+}
+
+/* ================= FADE-LEFT ANIMATION ================= */
+.fade-left {
+    opacity: 0;              
+    transform: translateX(-50px); 
+    transition: all 0.8s ease-out; 
+}
+
+.fade-left.show {
+    opacity: 1;            
+    transform: translateX(0); 
+}

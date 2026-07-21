@@ -142,75 +142,53 @@
 
 .link {
     display: flex;
-    gap: 5.5rem;
+    gap: 5.8rem;
     padding: 7px 5rem 0;
 }
 
 .link a {
     text-decoration: none;
-    font-size: 1.042rem;
     color: rgb(2, 23, 48);
     transition: 0.3s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
 }
 
 .link a:hover,
 .link a:focus {
     border: none;
-    border-radius: 7px;
+    transform: scale(1.1);
     background-color: #0a89f1;
     color: #fff;
-    padding: 3.5px;
-    font-size: 1.05rem;
+    
 } 
 
 /* ================= about bar ================= */
 .about-bar {
-        background-color: #eeeeee;
+    background-color: #0a89f1;
     width: 100%;
     height: 40px;
 }
 
 /* ================= about-droplink ================= */
 .about-droplink {
-    display: flex;
+     display: flex;
     padding: 7px 0px 0px 1.3rem;
     gap: 0.5rem;
 }
 
 /* ================= about-droplink a ================= */
 .about-droplink a {
-    text-decoration: none;
-    font-size: 1.02rem;
-    color: rgb(2, 23, 48);
-    transition: all 0.3s ease;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     
-}
-
-/* ================= home a ================= */
-#home a{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(2, 23, 48, 0.5);
-}
-
-#home a:hover,
-#home a:focus {
-      border: none;
-    border-radius: 7px;
-    background-color: #0a89f1;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 5px;
-    font-size: 1.05rem;
-    text-decoration: none;
-}
-
-/* ================= us a ================= */
-#us a {
-    text-decoration: none;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
+     
 }
 
 /* ================= image1 content  ================= */
@@ -240,10 +218,14 @@
     display: none;
 }
 
+.top-page{
+   background-color: #c6dfee;
+}
+
 /* ================= heading1 ================= */
 #heading1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 1rem 0px 7px 1.2rem;
 }
 
@@ -255,7 +237,7 @@
 /* ================= GETIN-paragraph  ================= */
 #GETIN-paragraph 
 {
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     padding: 0px 1rem 3rem 1.2rem;
 }
 
@@ -291,10 +273,15 @@
     padding: 0rem 0rem 1.5rem 0rem;
 }
 
+/* middle */
+.middle{
+    background-color: #7ecde0;
+}
+
 /* ================= more-programs ================= */
 #more-programs {
-    color: #fff;
-    background-color: red;
+    color: #000;
+    background-color: #f1d63c;
     height: 60px;
     width: 110px;
     display: flex;
@@ -321,6 +308,10 @@
        margin-right: 1rem;
 }
 
+.bottom-page{
+     background-color: #c6dfee;
+}
+
  /* ================= program-paragraph2 ================= */
 #program-paragraph2 {
     padding: 0rem 1rem 1.2rem 1.5rem;
@@ -337,6 +328,9 @@
 #socials-header {
       padding-top: 3rem; 
       padding-bottom: 1rem;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.5px;
 }
 
 .socials {
@@ -354,93 +348,6 @@
     transform: scale(1.2);
 }
 
-/* ================= footer ================= */
-.footer {
-    width: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
-    background-color: #0a89f1;
-    color: #fff;
-
-}
-
-/* ================= footer paragraph ================= */
-#footer-paragraph {
-       font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding-top: 9rem;
-       padding-left: 1.5rem;
-       padding-bottom: 2rem;
-}
-
-/* ================= popular links ================= */
-#Popular-links {
-        font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding-left: 1.5rem;
-       padding-bottom: 1.5rem;
-}
-
-/* ================= footer links ================= */
-.footer-links a {
-           text-decoration: none;
-           display: block;
-           color: #fff;
-           margin-bottom: 0.6rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding-left: 1.5rem;
-            transition: color 0.3s ease;
-}
-
-.footer-links a:hover  {
-           color: #000;
-}
-
-/* ================= Reach Out header ================= */
-#Reach-Out {
-             font-weight: normal;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       padding: 1.5rem 1.5rem;
-}
-
-/* ================= Reach Out mail ================= */
-.mail {
-    display: flex;
-    font-size: 1.05rem;
-    align-items: center;
-    gap: 0.5rem; 
-    color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 1.5rem;
-    margin-top: 0.5rem; 
-}
-
-/* ================= Reach Out telephone ================= */
-#telephone {
-     display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-    color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 1.2rem;
-    margin-top: 1rem; 
-}
-
-/* ================= phone ================= */
-.phone-circle {
-             width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #fff;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 footer hr {
     border: none;           
     height: 1px;               
@@ -451,7 +358,7 @@ footer hr {
 #copy {
     padding-top: 2rem;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* ================= RESPONSIVE RULES ================= */
@@ -477,23 +384,57 @@ footer hr {
     .socials-content {
         padding-left: 2rem;
     }
+   /*  about-bar  */
+.about-bar {
+       background-color: #fff;
+    width: 100%;
+    height: 40px;
+}
 
-       /* footer */
-    .footer {
-           height: 760px;
-    }
+/*  about-droplink */
+.about-droplink {
+    display: flex;
+    padding: 7px 0px 0px 1.3rem;
+    gap: 0.5rem;
+}
+
+/*  about-droplink a  */
+.about-droplink a {
+    font-size: 1.02rem;
+    color: #000;
+    transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-family: Arial, sans-serif;
+     font-weight: normal;
+     
+}
+
+/* home a  */
+#home a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #000;
+}
+
+#home a:hover,
+#home a:focus {
+     border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+#slash{
+    font-weight: bold;
+}
 
      /* hr */
      hr {
         display: none;
     }
-
-         /* footer paragraph */
-     #footer-paragraph {
-        margin-right: 1rem;
-        line-height: 1.5rem;
-        word-spacing: 0.1rem;
-     }
 }
 
 
@@ -515,44 +456,35 @@ footer hr {
     display: block;
     padding-bottom: 1.5rem;
 }
-   
-        /* footer */
-    .footer {
-     height: 620px;
-         width: 100%;
-    max-width: 1200px;
-    }
- 
-    /* footer top */
-    .footer-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 8.5rem 3rem 2rem;
-        gap: 4rem;
-    }
-
-    /* footer left */
-    .footer-left {
-        max-width: 55%;
-    }
-
-    /* reach out */
-    .reach-out {
-        max-width: 40%;
-    }
-
-    /* footer paragraph */
-    #footer-paragraph {
-        padding-top: 1rem;
-        width: 500px;
-        line-height: 1.5rem;
-        word-spacing: 0.1rem;
-    }
 }
 
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 767px) {
+     /* us a */
+   #us a{
+    text-decoration: none;
+   }
+     /* heading1 */
+         #heading1 {
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+         }
+
+          /* heading1 */
+         #heading1 {
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            width: 90%;
+            margin-bottom: 1rem;
+         }
+
+
+    /* GETIN-paragraph */
+    #GETIN-paragraph {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
 
     /* programs-content */
     .programs-content {
@@ -576,7 +508,7 @@ footer hr {
      /* AboutUs-h2 */    
      #AboutUs-h2 {
       color:  #000;
-        font-size: 1.2rem;
+        font-size: 1.9rem;
         font-weight: normal;
         letter-spacing:  0.1em;
         text-transform: uppercase;
@@ -584,12 +516,137 @@ footer hr {
         font-weight: bold;
         padding-bottom: 2rem;
 }
+       /* what-we-do */ 
+       #what-we-do {
+        font-size: 1.7rem;
+       }
+
+       /* program-paragraph2 */
+       #program-paragraph2 {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+       }
+
+       /* program-paragraph3 */
+       #program-paragraph3 {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+       }
+
+       /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
 }
 
 /* ================= TABLET & DESKTOP ONLY ================= */
 @media (min-width: 768px) {
-
      /* AboutU-headerclass */
     .AboutU-headerclass {
         display: block;
@@ -657,6 +714,349 @@ footer hr {
     .socials-content {
     padding-left: 6rem;
 }
+}
+
+/* ================= TABLET ONLY ================= */
+@media (min-width:768px) and (max-width:1024px) {
+      /* about-droplink a */
+    .about-droplink a{
+        text-decoration: none;
+    }
+    /* heading1 */
+         #heading1 {
+            font-size: 2.5rem;
+            font-family: Arial, sans-serif;
+            width: 90%;
+            margin-bottom: 1rem;
+         }
+           
+         /* GETIN-paragraph */
+         #GETIN-paragraph {
+            font-size: 32px;
+            line-height: 1.7;
+         }
+
+         /* what-we-do */
+         #what-we-do {
+           font-size: 38px;
+         }
+
+         /* program-paragraph2 */
+         #program-paragraph2 {
+            font-size: 32px;
+            line-height: 1.7;
+         }
+
+         /* program-paragraph3 */
+         #program-paragraph3 {
+            font-size: 32px;
+            line-height: 1.7;
+         }
+
+          /* Programs-header */
+         #Programs-header {
+            font-size: 2rem;
+         }
+
+         /* program-paragraph */
+         #program-paragraph {
+             font-size: 20px;
+         }
+
+         /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 700px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+     padding: 10rem 40px 20px;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding-left: 40px;
+       margin-top: 2rem;
+       text-transform: uppercase;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    margin-top: 1rem; 
+    font-size: 1.2rem;
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 40px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 10px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
+
+/* ================= DESKTOP ONLY ================= */
+@media (min-width:1025px) {
+     /* home, slash */
+    #home,
+    #slash {
+        display: none;
+    }
+
+      /* about-droplink */
+    .about-droplink a{
+        text-decoration: none;
+    }
+
+    /* heading1 */
+         #heading1 {
+            font-size: 3rem;
+            font-family: Arial, sans-serif;
+         }
+           
+         /* GETIN-paragraph */
+         #GETIN-paragraph {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* what-we-do */
+         #what-we-do {
+           font-size: 48px;
+         }
+
+         /* program-paragraph2 */
+         #program-paragraph2 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+         /* program-paragraph3 */
+         #program-paragraph3 {
+            font-size: 24px;
+            line-height: 1.7;
+         }
+
+          /* Programs-header */
+         #Programs-header {
+            font-size: 2rem;
+         }
+
+         /* program-paragraph */
+         #program-paragraph {
+             font-size: 20px;
+         }
+
+         /* footer */
+.footer {
+     color: #fff;
+     background-color: #1e5be0;
+     font-family: Arial, sans-serif;
+     height: 650px;
+}
+
+/* second-row */
+.second-row {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 90px 30px 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+/* left-side, right-side */
+.left-side {
+     width: 50%;
+}
+
+/* footer-paragraph */
+#footer-paragraph {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 2.5rem;
+     word-spacing: 0.1em;
+}
+
+/*  Reach Out header */
+#Reach-Out {
+             font-weight: normal;
+       font-family: Arial, sans-serif;
+       padding: 1.5rem 1.5rem;
+}
+
+/* Reach Out mail  */
+.mail {
+    display: flex;
+    font-size: 1.05rem;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem; 
+}
+
+/*  Reach Out telephone  */
+#telephone {
+     display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-left: 1.2rem;
+    margin-top: 1rem; 
+}
+
+/*  phone  */
+.phone-circle {
+             width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular-links */
+#Popular-links {
+     font-size: 2rem;
+     font-family: Arial, sans-serif;
+     padding: 50px 0px 20px 50px;
+}
+
+/* footer-links */
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0;
+    gap: 2rem;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+     text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3.5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+footer hr {
+    border: none;           
+    height: 1px;               
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
+
+/* ================= MOBILE ================= */
+@media (min-width: 500px) and (max-width: 700px) {
+    /* footer */
+    .footer{
+        height: 800px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 450px) {
+        /* socials-header */
+    #socials-header{
+        width: 70%;
+    }
+    /* footer */
+    .footer{
+        height: 980px;
+    }
 }
 
 /* ================= FADE-UP ANIMATION ================= */

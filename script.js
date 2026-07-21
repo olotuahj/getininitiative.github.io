@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.remove('active');
     });
 
-    // Rocket button
-    const rocketBtn = document.querySelector('.rocket-box');
-    const aboutCab = document.getElementById('about-cab');
-
-    rocketBtn.addEventListener('click', () => {
-        rocketBtn.classList.toggle('active-border');
-
         // smooth scroll to About CAB
         aboutCab.scrollIntoView({
             behavior: 'smooth',
@@ -42,4 +35,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     faders.forEach(fader => appearOnScroll.observe(fader));
 
+    // SLIDER
+const slides = document.querySelectorAll(
+    ".fig1-content, .fig2-content, .fig3-content"
+);
+
+const nextBtn = document.getElementById("arrowNext");
+const backBtn = document.getElementById("arrowBack");
+const slideCount = document.querySelector(".slide-count");
+
+let currentSlide = 0;
+
+function showSlide(index) {
+
+    // run slider only on desktop
+    if (window.innerWidth < 780) {
+        slides.forEach(slide => slide.style.display = "flex");
+        return;
+    }
+
+    slides.forEach(slide => {
+        slide.style.display = "none";
+    });
+
+    slides[index].style.display = "flex";
+
+    slideCount.textContent = `0${index + 1} of 0${slides.length}`;
+
+    backBtn.disabled = index === 0;
+    nextBtn.disabled = index === slides.length - 1;
+}
+
+nextBtn.addEventListener("click", () => {
+    if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+    }
 });
+
+backBtn.addEventListener("click", () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide);
+    }
+});
+
+// initial
+showSlide(currentSlide);
+
